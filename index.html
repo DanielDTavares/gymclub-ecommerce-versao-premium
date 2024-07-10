@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/responsivel.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>GymClub</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="header-inner-content">
+          <img class="imagem" src="img/GymClub-logo.png" alt="" />
+          <div class="search-box">
+            <input
+              type="text"
+              class="search-txt"
+              placeholder="Encontre a roupa ideal para você"
+            />
+            <a href="#" class="search-btn">
+              <img onclick="pesquisar()" src="img/search.svg" alt="lupa" height="20" width="20" />
+            </a>
+          </div>
+          <nav class="pop">
+            <ul>
+              <a href="#">
+                <li>Home</li>
+              </a>
+              <a href="#">
+                <li>Produtos</li>
+              </a>
+              <a href="#">
+                <li>Categorias</li>
+              </a>
+            </ul>
+          </nav>
+          <div class="nav-icon-conteiner">
+            <a href="#"
+              ><img
+                width="30%"
+                src="img/sacola.png"
+            /></a>
+            <button class="hamburger"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#"
+            ><img
+              src="img/banner01.png"
+              alt="escolha seu estilo"
+              class="d-block"
+              style="width: 100%"
+          /></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"
+            ><img
+              src="img/banner02.png"
+              alt="roupas para treinar"
+              class="d-block"
+              style="width: 100%"
+          /></a>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <main class="barra-br">
+      <div class="barra">
+        <h3 class="parte">Conheça a roupa que ira mudar o seu vizual</h3>
+      </div>
+    </main>
+
+    <!--conheça a roupa de ira mudar o seu vizual-->
+    <div class="conteiner">
+      <div class="white-box">
+        <div class="items">
+          <div class="item">
+            <div class="product">
+              <img src="img/streetwear01.png" alt="">
+            </div>
+            <h3>Camisa Oversized Streetwear 100% Algodão</h3>
+            <span>R$79,90</span>
+            <button>Comprar</button>
+          </div>
+          <div class="item">
+            <div class="product">
+              <img src="img/chicago01.png" alt="">
+            </div>
+            <h3>Camiseta Oversized Masculina Chicago 100% Algodão</h3>
+            <span>R$79,90</span>
+            <button>Comprar</button>
+          </div>
+          <div class="item">
+            <div class="product">
+              <img src="img/oversized01.png" alt="">
+            </div>
+            <h3>Camiseta Anjo Money Masculina Streetwear 100% Algodão</h3>
+            <span>R$79,90</span>
+            <button>Comprar</button>
+          </div>
+          <div class="item">
+            <div class="product">
+              <img src="img/premium01.png" alt="">
+            </div>
+            <h3>Camiseta Premium Masculina Los Angeles 100% Algodão</h3>
+            <span>R$79,90</span>
+            <button>Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--compre sua roupa por categoria-->
+    <main class="box-barra">
+      <div class="barra-box">
+        <h3>Compre sua roupa por categoria</h3>
+      </div>
+    </main>
+  </main>
+  <main class="fdp">
+    <div class="conteiner-3d">
+      <div class="card">
+        <img class="background" src="img/chicago2.png" />
+        <div class="card-content">
+          <svg>...</svg>
+          <h3 class="title">Camisas Oversized</h3>
+          <!--<button>COMPRAR</button>!-->
+        </div>
+        <div class="backdrop"></div>
+      </div>
+    </div>
+    <div class="conteiner-3d">
+      <div class="card">
+        <img class="background" src="img/treino.png" />
+        <div class="card-content">
+          <svg>...</svg>
+          <h3 class="title">Roupas Streetwear</h3>
+          <!--<button>COMPRAR</button>!-->
+        </div>
+        <div class="backdrop"></div>
+      </div>
+    </div>
+    <div class="conteiner-3d">
+      <div class="card">
+        <img class="background" src="img/chicago2.png" />
+        <div class="card-content">
+          <svg>...</svg>
+          <h3 class="title">Roupas de Academia</h3>
+          <!--<button>COMPRAR</button>!-->
+        </div>
+        <div class="backdrop"></div>
+      </div>
+    </div>
+    <div class="conteiner-3d">
+      <div class="card">
+        <img class="background" src="img/chicago2.png" />
+        <div class="card-content">
+          <svg>...</svg>
+          <h3 class="title">Roupas de Academia</h3>
+          <!--<button>COMPRAR</button>!-->
+        </div>
+        <div class="backdrop"></div>
+      </div>
+    </div>
+  </main>
+
+  <main class="linha">
+  </main>
+  <div class="cartao">
+    <div class="cartao-slider">
+      <div class="carta">
+    <img src="img/cartao.png" alt="">
+  </div>
+  </div>
+  </div>
+  <main class="linha-2">
+  </main>
+  <!--quem nós somos?-->
+  <main class="quem">
+    <div class="somos">
+      <h3>Quem nós Somos?</h3>
+      <div class="nos">
+      <p>A Gym Club é muito mais
+        que uma simples marca
+        de roupas esportivas, é
+        uma resposta criativa aos
+        desafios do mercado.
+        Trouxemos inovação para
+        proporcionar a incrível
+        sensação de ver suas ideias
+        ganharem vida com o nosso
+        sistema de produção.</p>
+      </div>
+      <div class="mais">
+        <h5>Conheça mais da nossa Historia</h5>
+        <a href="#"><button>Ver Mais...</button></a>
+      </div>
+    </div>
+  </main>
+  <!--email-->
+  <main>
+    <div class="promo">
+      <div class="promo-box">
+        <h3>Receba todas as promoções</h3>
+        <p>Quer receber nossas ofertas? Cadatre-se e receba!</p>
+        <div class="promo-jt">
+        <input type="email" placeholder="E-mail" class="promo-input">
+        <a href="#" class="promo-a"><img width="20" src="img/ceta.png" alt=""></a>
+      </div>
+      </div>
+    </div>
+  </main>
+  <!--rodapé-->
+  <footer class="fixed-buttom rodape">
+      <div class="crl">
+        <ul class="departamentos">
+          <h3>Departamentos</h3>
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Produtos</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Perguntas Frequentes</a></li>
+          <li><a href="">Rstreio</a></li>
+          <li><a href="">Quem Somos?</a></li>
+        </ul>
+        <div class="contatos">
+          <h3>Entre em Contato</h3>
+          <img width="20" src="img/whatsapp.png" alt="">
+          <li><a href="#">63991389543</a></li>
+          <img width="20" src="img/email.png" alt="">
+          <li><a href="#">oficialgymclub@gmail.com</a></li>
+      </div>
+      <div class="ct">
+        <a target="_blank" href="https://www.instagram.com/dan1eltav?igsh=N2NrOHgyanE5dnM5">&copy;Todos os Direitos Reservados a GymClub</a>
+      </div>
+    </div>
+  </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

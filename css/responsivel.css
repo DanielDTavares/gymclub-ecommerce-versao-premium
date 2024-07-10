@@ -1,0 +1,86 @@
+
+  @media screen and (max-width: 800px) {
+    .nav-icon-conteiner img {
+        max-width: 7%;
+        margin-left: -430px;
+    }
+
+    .imagem {
+        max-width: 47%;
+        margin-left: 45%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .search-box {
+        max-width: 40%;
+        margin-left: 170px;
+    }
+
+    .search-txt {
+        max-width: 70%;
+    }
+
+    .search-btn img {
+        max-width: 90%;
+        margin-left: 50%;
+    }
+
+    .pop ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: vw;
+        height: 100vh;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        background-color: rgb(0, 3, 204);
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+
+        clip-path: circle(1500px at 90% -15);
+        pointer-events: all;
+    }
+
+    .barra {
+        display: none;
+        position: relative;
+        height: 50%;
+        margin-top: -45%;
+    }
+  
+    .barra-br h3{
+      font-size: 50px;
+      max-width: 100%;
+      transform: translate(-20%, -10%);
+    }
+
+    .white-box {
+        width: 90%;
+        transform: translate(-8%, -30%);
+      }
+
+      .box-barra {
+        position: absolute;
+        transform: translate(0%, -100%);
+      }
+
+      .barra-box {
+        width: 100%;
+        transform: translate(-19%, -0%);
+      }
+      
+      .barra-box h3 {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        font-size: 3px;
+      }
+  }
+  

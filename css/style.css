@@ -1,0 +1,569 @@
+/* Aplica box-sizing: border-box a todos os elementos, 
+   definindo padding e margin como 0 para todos os elementos */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Define a fonte padrão do corpo do documento */
+body {
+  font-size: "arial";
+  background-color: #ffffff !important;
+}
+
+.search-box {
+  position: absolute;
+  top: 0% !important;
+  left: 10% !important;
+  background: #ffffff;
+  height: 50px;
+  width: 92%;
+  padding: 10px !important;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  transform: translate(-40%);
+}
+
+.search-btn {
+  transform: translate(+60%, -10%);
+}
+
+.search-txt {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #656565;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+/* Define a largura máxima do conteúdo interno do cabeçalho 
+   e centraliza-o horizontalmente */
+.header-inner-content {
+  display: flex !important;
+  align-items: center !important;
+  max-height: 50px;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(0%, 0%);
+}
+
+.header-inner-content img {
+  transform: translate(-120%);
+}
+
+/* Estiliza a barra de navegação com cor de fundo, 
+   padding, posição fixa no topo, sombra e z-index */
+.navbar {
+  background-color: rgb(0, 3, 204);
+  /*background-image: url(../img/transforme\ seus.png);*/
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 10px 0px 10px #000000;
+  z-index: 99;
+}
+
+/* Define o layout flexível para os itens dentro da navbar,
+   centralizando-os verticalmente e distribuindo-os uniformemente */
+.navbar > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Define o layout flexível para a lista de navegação, 
+   removendo os marcadores e centralizando os itens */
+nav ul {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  transform: translate(0%, 10%);
+}
+
+/* Define o layout flexível para o container dos ícones de navegação,
+   centralizando os itens verticalmente */
+.nav-icon-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+/* Define a largura dos ícones de navegação e o cursor para pointer */
+.nav-icon-conteiner img {
+  position: absolute;
+  left: 168%;
+  top: 15%;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Adiciona margem à direita do primeiro ícone de navegação */
+.nav-icon-conteiner img:first-child {
+  margin-right: 1rem;
+}
+
+/* Define a cor do texto dos itens da lista de navegação,
+   adiciona margem à direita e define o cursor para pointer */
+nav ul li {
+  font-size: 120%;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+/* Adiciona uma animação de transformação ao passar o mouse 
+   sobre os itens da lista de navegação */
+
+
+/* Esconde o botão do menu, provavelmente usado em layouts responsivos */
+.hamburger {
+  display: block;
+  border: none;
+  background: none;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-top: 5px;
+}
+
+.barra {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  background-color: rgb(0, 3, 204);
+  width: 90%;
+  height: 50px;
+  border-radius: 6px;
+  box-shadow: 6px 6px 22px 1px #000000;
+}
+
+.barra h3 {
+  position: absolute;
+  left: 32%;
+  top: 20%;
+  color: #ffffff;
+  justify-content: center;
+  text-align: center;
+  font-size: 23px;
+}
+
+.conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 110vh;
+  overflow-x: auto;
+  transform: translate(0%, -7%);
+}
+
+.white-box {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  height: 35%;
+}
+
+.items {
+  display: inline-block;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 6px;
+  height: 40%;
+  box-shadow: 6px 6px 22px 2px #000000;
+}
+
+.item button {
+  padding: 5%;
+  border: none;
+  height: 100%;
+  width: 100;
+  color: white;
+  font-size: 120%;
+  background-color: rgb(0, 3, 204);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.product {
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.6s ease;
+}
+
+.product:hover img {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+.item span {
+  color: rgb(0, 162, 11);
+  padding: 5%;
+}
+
+.item h3 {
+  padding: 5%;
+  font-size: 80%;
+}
+
+.item img {
+  margin-top: 10px;
+  height: 90%;
+}
+
+.box-barra {
+  position: absolute;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 90%;
+  height: 50px;
+  border-radius: 6px;
+  border-radius: 8px;
+  box-shadow: 6px 6px 22px 2px #000000;
+
+  transform: translate(6%, 0%);
+}
+
+.barra-box h3 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  color: #000000;
+  justify-content: center;
+  text-align: center;
+  font-size: 23px;
+}
+
+/*os 10 mais vendidos*/
+.fdp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 150vh;
+  padding: 60px;
+  margin: 0;
+  background-color: #ffffff;
+  overflow-x: auto;
+}
+
+.conteiner-3d {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+  transform: translate(5px, -180px);
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 6px 6px 22px 1px #000000;
+}
+
+.background {
+  display: block;
+  width: 320px;
+  height: 430px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.card-content {
+  position: absolute;
+  top: 30;
+  left: 30;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: translate(-140px, +150px);
+}
+
+.title {
+  margin: 20 !important;
+  padding: 20;
+  font-size: 20px;
+  text-align: center;
+  transform: translate(40px, 10px);
+}
+
+.card:hover .background {
+  transform: scale(1.1);
+}
+
+.card:hover .card-content {
+  opacity: 1;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.linha::after {
+  position: absolute;
+  top: 268%;
+  left: 50%;
+  content: '';
+  display: block;
+  height: 3px;
+  border-radius: 6px;
+  width: 90%;
+  background-color: #000000;
+  box-shadow: 6px 6px 22px 1px #000000;
+  transform: translate(-50%, 950%);
+}
+.linha-2::after {
+  position: absolute;
+  top: 285%;
+  left: 50%;
+  content: '';
+  display: block;
+  height: 3px;
+  border-radius: 6px;
+  width: 90%;
+  background-color: #000000;
+  box-shadow: 6px 6px 20px 2px #000000;
+  transform: translate(-50%, 950%);
+}
+
+.cartao img{
+  width: 90%;
+  transform: translate(6%, -400%);
+}
+
+.cartao .cartao-slider {
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;  
+}
+/*
+@keyframes scroll{
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-200px * 7));
+    transform: translateX(calc(-200px * 7));
+  }
+}
+  */
+
+  /*quem nós somos?*/
+
+.quem {
+  text-align: center;
+  color: #000000;
+  transform: translate(0%, -120%);
+}
+
+.somos h3 {
+  transform: translate(0%, -100%);
+}
+
+.nos p {
+  position: absolute;
+  left: 18%;
+  width: 60%;
+}
+
+.mais {
+  transform: translate(0%, 160%);
+}
+
+.mais button {
+  background-color: #ffffffa4;
+  box-shadow: 3px 3px 20px 1px #000000;
+  border-radius: 6px;
+  border: none;
+  width: 10%;
+  height: 50%;
+  margin-top: 1%;
+  transition: opacity 0.3s ease;
+}
+
+.mais button:hover {
+  transform: scale(1.1);
+}
+
+/*rodape*/
+
+.rodape {
+  background-color: #65656586;
+  box-shadow: 6px 6px 20px 2px #000000;
+  color: #000000;
+  display: flex;
+  text-align: start;
+  align-items: center;
+  transform: translate(0%, 180%);
+}
+
+.fixo {
+  color: #ffffffc4;
+  position: absolute;
+  display: flex;
+}
+
+.crl {
+  display: flex;
+  padding: 20px;
+}
+
+.departamentos {
+  transform: translate(30%);
+}
+
+.departamentos ul li {
+  list-style-type: none;
+  padding: 0;
+  color: #656565;
+}
+
+.contatos {
+  transform: translate(80%);
+}
+
+.contatos li {
+  transform: translate(12%);
+}
+
+.contatos img a {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contatos img {
+  transform: translate(-0%, 120%);
+}
+
+.fixe {
+  background-color: rgb(0, 3, 204);
+  text-align: center;
+  content: '';
+  display: block;
+  height: 50% !important;
+  color: rgb(0, 0, 0);
+  margin-top: 10%;
+}
+
+.fixed-buttom.rodape ul.departamentos,
+.fixed-buttom.rodape .contatos {
+    list-style-type: none; /* Remove os pontos das listas */
+    padding: 0; /* Remove o padding padrão das listas */
+}
+
+.fixed-buttom.rodape ul.departamentos li,
+.fixed-buttom.rodape .contatos li {
+    margin-bottom: 10px; /* Adiciona um espaço entre os itens da lista */
+}
+
+.fixed-buttom.rodape a {
+    color: rgba(0, 0, 0, 0.796); /* Muda a cor dos links para branco */
+    text-decoration: none; /* Remove a sublinhado dos links, opcional */
+}
+
+.ct {
+  box-shadow: 6px 6px 20px 2px #000000;
+  background-color: rgb(0, 3, 204);
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 240%);
+}
+
+.ct a {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+}
+
+/*email*/
+
+.promo {
+  position: absolute;
+  text-align: center;
+  transform: translate(0%, 80%);
+  box-shadow: 6px 6px 20px 2px #000000;
+  background-color: rgb(0, 3, 204);
+  width: 100%;
+  height: 28%;
+}
+
+.promo-box {
+  transform: translate(0%, 25%);
+}
+
+.promo-box h3 {
+  color: #fff;
+}
+
+.promo-box p {
+  color: #fff;
+}
+
+.promo-jt {
+  position: absolute;
+  top: 10% !important;
+  left: 10% !important;
+  background: #ffffff;
+  height: 50px;
+  width: 50%;
+  padding: 10px !important;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  position: absolute;
+  transform: translate(30%, 160%);
+  background-color: #fff;
+}
+
+.promo-input {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #656565;
+  font-size: 14px;
+  line-height: 40px;
+}
